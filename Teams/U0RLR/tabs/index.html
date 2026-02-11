@@ -274,7 +274,8 @@ fetch(url)
 .then(r => r.text())
 .then(text => {
   const rows = text.trim().split(/\r?\n/);
-  const header = parseCSVRow(rows[0]).map(h => clean(h).toLowerCase());
+  const header = parseCSVRow(rows[0].replace(/^\uFEFF/, ""))
+  .map(h => clean(h).toLowerCase());
   const idx = n => header.indexOf(n);
 
   const players = rows.slice(1, 51).map(row => {
