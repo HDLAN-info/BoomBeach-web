@@ -10,7 +10,7 @@
 <style>
 @font-face {
   font-family: "Broshk";
-  src: url("fonts/broshk.ttf") format("truetype");
+  src: url("/fonts/broshk.ttf") format("truetype");
 }
 
 html, body {
@@ -19,7 +19,7 @@ html, body {
   width: 2100px;
   font-family: "Trebuchet MS", Arial, sans-serif;
   background:
-    url("img/noise.png") repeat,
+    url("/img/noise.png") repeat,
     #f5edd1;
 }
 
@@ -121,7 +121,7 @@ html, body {
 }
 
 .session-icon.active {
-  background-image: url("img/session.webp");
+  background-image: url("/img/session.webp");
   opacity: 1;
 }
 
@@ -224,8 +224,8 @@ html, body {
 <script>
 const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQqE6PF33q7CNxxCxsS26B7gHSQui6Sw2sJtuFt_cJsWfqADrxVqnTTsRS9XVSNqWyZnJqVS6GhuwOk/pub?output=csv";
 
-const medalIcon = "img/medal.webp";
-const intelIcon = "img/intel.webp";
+const medalIcon = "/img/medal.webp";
+const intelIcon = "/img/intel.webp";
 
 function clean(v) {
   return (v || "").trim().replace(/^"+|"+$/g, "");
