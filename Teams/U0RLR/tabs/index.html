@@ -273,7 +273,7 @@ function isTrue(v) {
 fetch(url)
 .then(r => r.text())
 .then(text => {
-  const rows = text.trim().split("\n");
+  const rows = text.trim().split(/\r?\n/);
   const header = parseCSVRow(rows[0]).map(h => clean(h).toLowerCase());
   const idx = n => header.indexOf(n);
 
