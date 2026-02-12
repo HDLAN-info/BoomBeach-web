@@ -1,11 +1,21 @@
 body {
   margin: 0;
   background-color: #4187a9;
-  background-image: url("../img/background_pattern.png");
-  background-repeat: repeat;
-  background-size: 500px 500px; /* uprav podle chuti */
   font-family: Arial, sans-serif;
   color: white;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../img/background_pattern.png");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  opacity: 0.5; /* ← 50 % průhlednost */
+  pointer-events: none;
+  z-index: -1;
 }
 
 .topbar {
