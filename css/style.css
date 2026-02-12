@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.topbar {
+  background: #111;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url("../img/background.jpg") center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 20px;
+}
+
+.buttons a {
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.title {
+  background: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.content {
+  padding: 40px;
+  background: #222;
+}
