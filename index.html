@@ -2,26 +2,52 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<title>Aktuality</title>
+<title>Web</title>
 <link rel="stylesheet" href="css/style.css">
 
 <script>
-function loadPage(url) {
+function loadPage(name, url) {
   document.getElementById("contentFrame").src = url;
+  document.getElementById("pageTitle").innerText = name;
 }
 </script>
 
 </head>
 <body>
 
+<!-- horní rámec -->
 <header class="topbar">
-  <button onclick="loadPage('frames/aktuality.html')">Aktuality</button>
-  <button onclick="loadPage('frames/rekordy.html')">Rekordy</button>
-  <button onclick="loadPage('frames/videa.html')">Videa</button>
+  <button onclick="loadPage('Supercell','https://link1')">Supercell</button>
+  <button onclick="loadPage('YouTube','https://link2')">YouTube</button>
+  <button onclick="loadPage('Season','https://link3')">Season</button>
+  <button onclick="loadPage('Team 1','https://link4')">Team 1</button>
+  <button onclick="loadPage('Team 2','https://link5')">Team 2</button>
 </header>
 
+<!-- středový rámec -->
+<section class="hero">
+  <div class="grid">
+    <button onclick="loadPage('Aktuality','https://link-aktuality')">Aktuality</button>
+    <button onclick="loadPage('Rekordy','https://link-rekordy')">Rekordy</button>
+    <button onclick="loadPage('Videa z OP','https://link-videa')">Videa z OP</button>
+    <button onclick="loadPage('YouTube videa','https://link-yt')">YouTube videa</button>
+    <button onclick="loadPage('Jednotky','https://link-jednotky')">Jednotky</button>
+    <button onclick="loadPage('Budovy','https://link-budovy')">Budovy</button>
+    <button onclick="loadPage('Tipy','https://link-tipy')">Tipy</button>
+    <button onclick="loadPage('Strategie','https://link-strategie')">Strategie</button>
+  </div>
+</section>
+
+<!-- spodní úzký rámec -->
+<section class="title" id="pageTitle">
+  Aktuality
+</section>
+
+<!-- Canva obsah -->
 <section class="content">
-  <iframe id="contentFrame" src="frames/aktuality.html"></iframe>
+  <iframe id="contentFrame"
+    src="https://link-aktuality">
+  </iframe>
 </section>
 
 </body>
