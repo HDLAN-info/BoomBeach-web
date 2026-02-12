@@ -2,39 +2,26 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<title>Hlavní stránka</title>
+<title>Aktuality</title>
 <link rel="stylesheet" href="css/style.css">
-</head>
 
+<script>
+function loadPage(url) {
+  document.getElementById("contentFrame").src = url;
+}
+</script>
+
+</head>
 <body>
 
 <header class="topbar">
-  <a href="#">Supercell</a>
-  <a href="#">YouTube</a>
-  <a href="#">Season</a>
-  <a href="#">Team 1</a>
-  <a href="#">Team 2</a>
+  <button onclick="loadPage('frames/aktuality.html')">Aktuality</button>
+  <button onclick="loadPage('frames/rekordy.html')">Rekordy</button>
+  <button onclick="loadPage('frames/videa.html')">Videa</button>
 </header>
 
-<section class="hero">
-  <div class="buttons">
-    <a href="aktuality.html">Aktuality</a>
-    <a href="rekordy.html">Rekordy</a>
-    <a href="videa-op.html">Videa z OP</a>
-    <a href="youtube.html">YouTube videa</a>
-    <a href="jednotky.html">Jednotky</a>
-    <a href="budovy.html">Budovy</a>
-    <a href="tipy.html">Tipy</a>
-    <a href="strategie.html">Strategie</a>
-  </div>
-</section>
-
-<section class="title">
-  AKTUÁLNÍ STRÁNKY
-</section>
-
 <section class="content">
-  Obsah bude odkazovat na Canva stránky
+  <iframe id="contentFrame" src="frames/aktuality.html"></iframe>
 </section>
 
 </body>
