@@ -1,0 +1,2 @@
+globalThis['cmsg']['assets'] = globalThis['cmsg']['assets'] || {};
+globalThis['cmsg']['assets']["cs-CZ"] = Object.assign(globalThis['cmsg']['assets']["cs-CZ"] || {}, {"23019":{"js":["c9230246cd285e16.strings.js"],"css":[]},"24447":{"js":["789c65f13c14f5a6.strings.js"],"css":[]},"27560":{"js":["79d35a8e0cefe93f.strings.js"],"css":[]},"44488":{"js":["8ac735eefe24c6ae.strings.js"],"css":[]},"70386":{"js":["025524c71a1f9458.strings.js"],"css":[]},"72719":{"js":["e0e282068b14c9c1.strings.js"],"css":[]}});
